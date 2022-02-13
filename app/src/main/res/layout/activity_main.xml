@@ -5,7 +5,7 @@
 
         <variable
             name="main"
-            type="com.example.english_app.ui.MainActivity" />
+            type="com.example.english_app.ui.component.main.MainActivity" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,14 +14,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".ui.MainActivity">
+        tools:context=".ui.component.main.MainActivity">
 
         <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="60dp" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="60dp" />
 
